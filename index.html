@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hero Academia</title>
+    <link href="http://fonts.cdnfonts.com/css/anime-ace" rel="stylesheet"> <!-- Police d'écriture -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> <!-- Logos -->
+    <link rel="stylesheet" href="./style.css" type="text/css">
+
+    
+</head>
+    <body>
+        <header>
+<!---- Barre de NAVIGATION :---->
+            <nav>
+                <div class="links"><img src="images/logo2.png" alt="Logo"></div>    
+                <div class="links"><a href="#news">News</a></div>
+                <div class="links"><a href="#persos">Persos</a></div>
+                <div class="links"><a href="#comment">Commentaires</a> </div>    
+            </nav>
+           
+<!---- Image du Haut (Wallpaper) :---->
+        <div class="top-image">
+            <img class="wallpaper" src="./images/wallpaper.png">
+        </div>
+        <br><br>
+        </header>
+
+<!---- Partie "PERSOS" :---->
+        <section class="box-heroes"> <!-- Boîte Principale -->
+            <div class="titre1">
+                <h2 label for="Personnages" id="persos"><strong>Persos:</strong></h2>
+            </div>
+            <div class="icons"> <!-- Boîte Secondaire : Image + Noms de personnages -->
+                <div class="icon-heroes">
+                    <img src="./images/Himiko.webp" alt="Himiko Toga">
+                    <h4>Himiko Toga</h4>
+                </div>
+                <div class="icon-heroes">
+                    <img src="./images/Izuku.webp" alt="Izuku Midoriya">
+                    <h4>Izuku Midoriya</h4>
+                </div>
+                <div class="icon-heroes">
+                    <img src="./images/Katsuki.webp" alt="Katsuki Bakugo">
+                    <h4>Katsuki Bakugo</h4>
+                </div>
+                <div class="icon-heroes">
+                    <img src="./images/Midnight.webp" alt="Midnight">
+                    <h4>Midnight</h4>
+                </div>
+            </div>
+        </section>
+    
+<!---- Partie  "NEWS" :---->
+        <section class="container"> <!-- Boîte principale -->
+            <div class="titre2">
+                    <h2 label for="Derniers Tomes" id="news"><strong>DERNIERS TOMES:</strong></span></h2>
+                </div>
+            <div class="box"> <!-- Boîte secondaire : Contient les Petites boîtes -->
+                <div class="box-item"> <!-- Petite Boîtes ( Images + Textes )-->
+                    <img class="box-icon" src="./images/image_1.jpg">
+                    <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, dolore, repudiandae, aliquam recusandae. </p>
+                </div>
+                <div class="box-item">
+                    <img class="box-icon" src="./images/image_2.jpg">
+                    <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, dolore, repudiandae, aliquam recusandae. </p>
+                </div>
+                <div class="box-item">
+                    <img class="box-icon" src="./images/image_3.jpg">
+                    <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, dolore, repudiandae, aliquam recusandae. </p>
+                </div>
+                <div class="box-item">
+                    <img class="box-icon" src="./images/image_4.jpg">
+                    <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, dolore, repudiandae, aliquam recusandae. </p>
+                </div>
+                <div class="box-item">
+                    <img class="box-icon" src="./images/image_5.jpg">
+                    <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, dolore, repudiandae, aliquam recusandae. </p>
+                </div>
+                <div class="box-item">
+                    <img class="box-icon" src="./images/image_6.jpg">
+                    <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, dolore, repudiandae, aliquam recusandae. </p>
+                </div> 
+            </div>
+        </section> <br>
+
+<!---- Partie  "COMMENTAIRES" :----> 
+        <section class="content"> <!-- Boîte Principale -->
+                <div class="titre3">
+                    <h2 label for="Commentaires" id="comment"><strong>Commentaires :</strong></span></h2>
+                </div>
+            <div class="in-content"> <!-- Boîte Secondaire : Contient Petite Boîte n°1 et n°2 -->
+                <div class="avatar"> <!-- Petite boîte n°1 : Icônes -->
+                    <img src="./images/avatar1.jpg" alt="Icône Tsuyu">
+                    <h4>Tsuyu</h4>
+                    <img src="./images/avatar2.png" alt="Icône Ochaco">
+                    <h4>Ochaco</h4>
+                    <img src="./images/avatar3.jpg" alt="Icône Mina" width="255px">
+                    <h4>Mina</h4>
+                </div>
+            <article class="content2"> <!-- Petite boîte n°2 : Textes, Dates, Notes  -->
+                <div class="articles">    
+                    <div class="star-rating">
+                        <input type="radio" checked="true" name="stars1_5" id="star1_a" value="5"/>
+                        <label for="star1_a"></label>
+                  
+                        <input type="radio" name="stars1_4" id="star1_b" value="4"/>
+                        <label for="star1_b"></label>
+                    
+                        <input type="radio" name="stars1_3" id="star1_c" value="3"/>
+                        <label for="star1_c"></label>
+                    
+                        <input type="radio" name="stars1_2" id="star1_d" value="2"/>
+                        <label for="star1_d"></label>
+                    
+                        <input type="radio" name="stars1_1" id="star1_e" value="1"/>
+                        <label for="star1_e"></label>
+                    </div>
+                        <p class="date">21/05/2021 15:12</p>
+                        <p class="description"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati veritatis animi dolor, omnis, tenetur perferendis unde ullam voluptates possimus sunt facilis accusantium, sint delectus est assumenda repellat qui. Dolores, inventore.</p>                  
+                <br><hr>
+                    </div>
+                <div class="articles">
+                    <div class="star-rating">
+                        <input type="radio" name="stars2_5" id="star2_a" value="5" disabled="true"/>
+                        <label for="star2_a"></label>
+                  
+                        <input type="radio" name="stars2_4" id="star2_b" value="4" disabled="true"/>
+                        <label for="star2_b"></label>
+                    
+                        <input type="radio" checked="true" name="stars2_3" id="star2_c" value="3"/>
+                        <label for="star2_c"></label>
+                    
+                        <input type="radio" name="stars2_2" id="star2_d" value="2"/>
+                        <label for="star2_d"></label>
+                    
+                        <input type="radio" name="stars2_1" id="star2_e" value="1"/>
+                        <label for="star2_e"></label>
+                    </div>
+                        <p class="date">21/05/2021 16:29</p>
+                        <p class="description"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati veritatis animi dolor, omnis, tenetur perferendis unde ullam voluptates possimus sunt facilis accusantium, sint delectus est assumenda repellat qui. Dolores, inventore.</p>
+                <br><hr>
+                    </div>
+                <div class="articles">
+                    <div class="star-rating">
+                        <input type="radio" name="stars3_5" id="star3_a" value="5" disabled="true"/>
+                        <label for="star3_a"></label>
+                  
+                        <input type="radio" name="stars3_4" id="star3_b" value="4" disabled="true"/>
+                        <label for="star3_b"></label>
+                    
+                        <input type="radio" name="stars3_3" id="star3_c" value="3" disabled="true"/>
+                        <label for="star3_c"></label>
+                    
+                        <input type="radio" checked="true" name="stars3_2" id="star3_d" value="2"/>
+                        <label for="star3_d"></label>
+                    
+                        <input type="radio" name="stars3_1" id="star3_e" value="1"/>
+                        <label for="star3_e"></label>
+                    </div>
+                    <p class="date">21/05/2021 14:23</p>
+                    <p class="description"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati veritatis animi dolor, omnis, tenetur perferendis unde ullam voluptates possimus sunt facilis accusantium, sint delectus est assumenda repellat qui. Dolores, inventore.</p>
+                </div>
+            </article> <!-- Fermeture balise : Petite Boîte n°2  -->
+            </div> <!-- Fermeture balise : Boîte Secondaire -->
+        </section> <!-- Fermeture balise : Boîte Principale -->
+
+<!--- Partie "FOOTER" : --->
+        <footer>
+            <div class="contact"> <!-- Nos informations de contact -->
+                <h2><strong> Nous Contacter</strong></h2>
+                <p>Email : Adresse@imaginaire.zz <br>
+                   Adresse : 12 Rue Je Sais Pas <br>
+                   98500 Mon Site Web</p>
+            </div>
+            <div class="reseau"> <!-- Logos des réseaux sociaux + Liens -->
+                <h2><strong>Nos Reseaux</strong></h2>
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https:////www.messenger.com" target="_blank"><i class="fab fa-facebook-messenger"></i></a>
+            </div>
+        </footer>
+    </body>
+</html>

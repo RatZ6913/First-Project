@@ -1,0 +1,425 @@
+/* Stylisation du BODY : */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FEFFD9;
+    font-family: 'Anime Ace', Arial, sans-serif;
+}
+
+/* Barre de NAVIGATION : */
+nav {
+	display:flex;
+	flex-wrap: wrap;
+	position:fixed;
+	width: 100%;
+	justify-content: space-evenly;
+	align-items: center;
+	background-color:  #302F2F;
+}
+
+nav .links img {
+	width: 120px;
+	height: 50px;
+	padding-right: -10px;
+}
+
+nav > div a {
+	text-decoration: none;
+	color: white;
+}
+
+nav > div a:hover {
+	border-radius: 7px;
+	color: #ce7358;
+	cursor: pointer;
+	background-color: #FEFFD9;
+	box-shadow: 0 0 10px #FEFFD9, 0 0 40px #FEFFD9, 0 0 10px #FEFFD9;
+}
+
+/* Image du haut ( Wallpaper ) : */
+div.top-image {
+	text-align: center;
+}
+
+.wallpaper {
+	width: 50em;
+	max-width: 80%;
+	height: auto;
+	padding-top: 5rem;
+}
+
+/* _____________________ Partie "PERSOS" : _____________________ */
+body > section.box-heroes {
+	width: 100%;
+	height: auto;
+	max-width: 17.5%;
+	float: right;
+}
+
+.titre1 h2 {
+	text-align: center;
+	text-decoration: underline;
+	text-decoration-thickness: from-font;
+	overflow-wrap: break-word;
+}
+
+section .icon-heroes {
+	text-align: center;
+}
+
+.box-heroes img {
+	max-width: 90%;
+}
+
+/* _____________________ Partie "NEWS" : _____________________ */
+.container {
+    width: 80%;
+	margin-left: 5px;
+    border: 10px ridge rgb(134, 133, 133);
+	border-right-style: groove;
+	border-bottom-style: groove;
+    border-radius: 25px;
+    background-color: rgb(140, 208, 240, 0.72);
+}
+
+.titre2 h2 {
+	margin-left: 15px;
+	text-decoration: underline;
+	text-decoration-thickness: from-font;  
+}
+
+.box {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	gap: 2rem;
+}
+
+.box-item {
+	display: flex;
+	width: 22vw;
+	min-width: 270px;
+	max-height: 350px;
+	margin: 10px;
+	height: auto;
+	background-color: #F3DCEB;
+	border-radius: 15px;
+}
+
+.text {
+	overflow-wrap: anywhere;
+}
+
+.box-icon {	
+	max-width: 55%;
+	padding: 10px;
+}
+
+/* _____________________ Partie "COMMENTAIRES" : _____________________ */ 
+.content {
+	width: 70%;
+	margin: auto;
+	background-color: #FFF;
+	border: dashed 3px #FB46F2;
+	border-radius: 60px;
+}
+
+.titre3 h2 {
+	margin-left: 20px;
+	text-decoration: underline;
+	text-decoration-thickness: from-font;  
+}
+
+div.in-content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.avatar {
+	width: 20%;
+	justify-content: center;
+	display: grid;
+	text-align: center;
+}
+
+.avatar > img {
+	width: 100px;
+	margin-top: 20px;
+	border-radius: 50%;
+}
+
+section .content2 {
+	width: 80%;
+	display: grid;
+}
+
+div .articles {
+	border-left: solid 2px #0E99F7;
+	height: max-content;
+	padding-left: 25px;
+	margin: 10px 0 10px 0;
+}
+
+.articles > hr {
+	width: 300px;
+	border: 1px solid #FB46F2;
+}
+
+/*  "Notes de commentaires*/
+.star-rating {
+	display: flex;
+	margin-top: 15px;
+	float: right;
+	flex-direction: row-reverse;
+	position: relative;
+}
+  
+.star-rating input {
+	display: none;
+}
+  
+.star-rating > label {
+	width: 20px;
+	height: 17px;
+	font-family: 'emoji';
+	font-size: 20px;
+	color: #0E99F7;
+	transition: transform .2s ease-in-out;
+}
+  
+.star-rating label:hover {
+	color: #FB46F2;
+	font-size: 30px;
+	transform: rotate(180deg);
+	cursor: pointer;
+}
+  
+label {
+	border: solid 0px;
+}
+  
+.star-rating label::before {
+	content: '\2606';
+	position: absolute;
+	top: 0px;
+	line-height: 20px;
+}
+  
+.star-rating input:checked ~  label:before {
+	content:'\2605';
+}  
+  
+/* _____________________ Partie "FOOTER"_____________________ */
+footer {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 20px;
+	justify-content: space-between;
+	background-color: RGB(140, 208, 240);
+}
+
+h2 {
+	text-align-last: start;
+	text-decoration: underline;
+	text-decoration-thickness: from-font;
+}
+
+.contact {
+	margin-left: 50px;
+}
+
+.reseau {
+	text-align-last: justify;
+	width: 45%;
+}
+
+.fab {	
+	padding: 12px;
+  	font-size: 30px;
+  	width: 30px;
+  	text-align-last: center;
+  	margin: 0 7px 10px 0px;
+	color: black;
+	border: solid 1px black;
+  	border-radius: 50%;
+	transition: background-color 2s ease;
+}
+
+.fab:hover{
+	background-color: #590CF1;
+}
+
+/*  Format MOBILE : */
+@media screen and (max-width:425px) {
+/*  Barre de NAVIGATION : */
+	nav {
+		margin: auto;
+		gap: 25%;
+		font-size: 75%;
+		row-gap: 1rem;
+		position: relative;
+		justify-content: center;
+	}
+/*  Image du Haut : */
+	.wallpaper {
+		padding-top: 1rem;
+		width: 100%;
+		max-width: 100%;
+		object-fit: contain;
+	}
+/*  Partie "PERSOS" : */
+	body > section.box-heroes {
+		max-width: 100%;
+		font-size: 50%;
+		float: none;
+	}
+	.icons {
+		display: flex;
+		grid-column-gap: 3.25rem;
+		justify-content: space-between;
+		flex-flow: wrap;
+		margin-right: 6%;
+		margin-left: 6%;
+	}
+	.titre1 h2 {
+		text-align: left;
+		margin-left: 10px;
+		font-size: 15px;
+	}
+	.icon-heroes img {
+		max-width: 90px;
+	}
+/*  Partie  "NEWS" : */
+	.container {
+		width: fit-content;
+		margin-right: 2%;
+		font-size: 65%;
+		text-transform: uppercase;
+	}
+	.box-item {
+		width: 90%;
+		min-width: 230px;
+		margin: 0;
+	}
+	.box-item:last-child {
+		margin-bottom: 10px;
+	}
+/* Partie "COMMENTAIRES" : */
+	.content {
+		width: 90%;
+		font-size: 65%;
+		text-transform: uppercase;
+	}
+	.titre3 h2 {
+		margin-left: 10%;
+	}
+	.avatar {
+		display: none;
+	}
+	div .articles {
+		width: 100%;
+		border: none;
+	}
+	.star-rating {
+		margin-top: 7px;
+	}
+	.articles > hr {
+		width: 100px;
+	}
+/* Partie "FOOTER" : */
+	footer {
+		display: inherit;
+		font-size: 65%;
+		text-transform: uppercase;
+	}
+	.contact {
+		padding-top: 5px;
+		margin: 10px 0px 0 10px;
+	}
+	.reseau {
+		width: 95%;
+		margin: 10px 0px 0 10px;
+	}
+	.fab {
+		padding: 7px;
+		font-size: 15px;
+		width: 15px;
+		margin-right: 4px;
+	}
+}	
+
+/*  Format TABLETTE : */
+@media screen and (min-width:426px) and (max-width:768px) {
+/* Barre de NAVIGATION */
+	nav {
+		font-size: 80%;
+	}
+/*  Partie "PERSOS" : */
+	
+	body > section.box-heroes {
+		max-width: 100%;
+		font-size: 65%;
+		float: none;
+	}
+	.icons {
+		display: flex;
+		justify-content: space-around;
+	}
+	.icon-heroes img {
+		max-width: 80px;
+	}
+	.titre1 h2 {
+		text-align: left;
+		margin-left: 25px;
+	}
+/*  Partie "NEWS" : */
+	.container {
+		width: fit-content;
+		justify-content: center;
+		font-size: 65%;
+		margin: 0 10px 0 10px;
+		text-transform: uppercase;
+	}
+	.box-item {
+		width: 40vw;
+		min-width: 175px;
+		margin: 10px 0 10px 0;
+	}
+/* Partie "COMMENTAIRES" : */
+	.content {
+		width: 95%;
+		font-size: 65%;
+		text-transform: uppercase;
+	}
+	.avatar img {
+		width: 75px;
+		margin-top: 10px;
+		margin-bottom: -20px;
+	}
+	.star-rating {
+		margin-top: 7px;
+	}
+	div .articles {
+		padding-left: 10px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.articles > hr {
+		width: 150px;
+	}
+/* Partie "FOOTER" : */
+	footer {
+		font-size: 65%;
+		text-transform: uppercase;
+	}
+	.contact {
+		margin-left: 5%;
+	}
+	.fab {
+		padding: 7px;
+		font-size: 15px;
+		width: 15px;
+		margin-right: 4px;
+	}
+}
+
